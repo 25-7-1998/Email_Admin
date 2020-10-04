@@ -7,7 +7,7 @@ public class Email {
 	private String lastname;
 	private String password;
 	private String department;
-	private int mailboxcapacity=500;
+	private int mailboxcapacity=600;
 	private String changepassword;
 	private String alternateemail;
 	private int defaultpasswordlength=8;
@@ -17,15 +17,15 @@ public class Email {
 	{
 		this.firstname=firstname;
 		this.lastname=lastname;
-		//System.out.println("EMAIL CREATED:"+this.firstname+this.lastname);
+		//System.out.println("EMAIL CREATED: "+this.firstname+this.lastname);
 		//create a method asking for department
 		this.department=setDepartment();
-		//System.out.println("Deaprtment:"+this.department);
+		//System.out.println("Deaprtment: "+this.department);
 		//call a method to create default password
 		this.password=setRandompassword(defaultpasswordlength);
-		//System.out.println("Your Password is:"+this.password);
+		//System.out.println("Your Password is: "+this.password);
 		email=firstname.toLowerCase()+"."+lastname+"@"+"."+department+".com";
-		//System.out.println("Your emailid is: "+email);
+		//System.out.println("Your Email_Id is: "+email);
 		
 	}
 	//ask for department
